@@ -28,7 +28,16 @@ public class guessing : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-         if (Input.GetKeyDown(KeyCode.DownArrow))
+
+        if (counter == -1)
+        {                     
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                counter = -1;
+                print("You win");
+            }
+        }
+       else  if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             max = guess;
             guess = (max + min) / 2;
@@ -36,7 +45,7 @@ public class guessing : MonoBehaviour {
             counter--;
 
         } 
-         if (Input.GetKeyDown(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             min = guess;
             guess = (max + min) / 2;
@@ -49,19 +58,8 @@ public class guessing : MonoBehaviour {
         }
         
             if (counter == 0)
-        {
-            // print("You win");
-            // counter = -1; 
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                print("You lose");
-            }
-                if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
-                {
-                    counter = -1;
-                    print("You win");
-                }
-               
+        {          
+            counter = -1;                                  
         }
 
         
