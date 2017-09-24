@@ -1,0 +1,40 @@
+Mono path[0] = 'C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data/Managed'
+Mono config path = 'C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data/Mono/etc'
+PlayerConnection initialized from C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55450
+Multi-casting "[IP] 161.28.13.249 [Port] 55450 [Flags] 2 [Guid] 3498598531 [EditorId] 2118080016 [Version] 1048832 [Id] WindowsPlayer(LAPTOP-B9NCPQRK) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55450]
+PlayerConnection already initialized - listening to [0.0.0.0:55450]
+Player data archive not found at `C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data/data.unity3d`, using local filesystem
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
+    Vendor:   Intel
+    VRAM:     3171 MB
+    Driver:   21.20.16.4599
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.023 seconds
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.960067 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3484 -> priority: 1 
+  Thread -> id: 2dec -> priority: 1 
