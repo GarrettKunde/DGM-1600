@@ -1,10 +1,10 @@
 Mono path[0] = 'C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data/Managed'
 Mono config path = 'C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data/Mono/etc'
 PlayerConnection initialized from C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55450
-Multi-casting "[IP] 161.28.13.249 [Port] 55450 [Flags] 2 [Guid] 3498598531 [EditorId] 2118080016 [Version] 1048832 [Id] WindowsPlayer(LAPTOP-B9NCPQRK) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55450]
-PlayerConnection already initialized - listening to [0.0.0.0:55450]
+PlayerConnection initialized network socket : 0.0.0.0 55076
+Multi-casting "[IP] 0.0.0.0 [Port] 55076 [Flags] 2 [Guid] 3498544706 [EditorId] 2118080016 [Version] 1048832 [Id] WindowsPlayer(LAPTOP-B9NCPQRK) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55076]
+PlayerConnection already initialized - listening to [0.0.0.0:55076]
 Player data archive not found at `C:/DGM 1600/DGM-1600/Finished games/Number Guesser_Data/data.unity3d`, using local filesystem
 Initialize engine version: 2017.1.0f3 (472613c02cf7)
 GfxDevice: creating device client; threaded=1
@@ -29,12 +29,11 @@ Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Manag
 Loading C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\DGM 1600\DGM-1600\Finished games\Number Guesser_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.023 seconds
+- Completed reload, in  1.202 seconds
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.960067 ms
+UnloadTime: 2.165425 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3484 -> priority: 1 
-  Thread -> id: 2dec -> priority: 1 
+  Thread -> id: 3f30 -> priority: 1 
+  Thread -> id: 2fb4 -> priority: 1 
