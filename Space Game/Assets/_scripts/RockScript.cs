@@ -23,7 +23,12 @@ public class RockScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(this.gameObject);
-        Instantiate(Splosion, transform.position, Quaternion.identity);
+        if (collision.gameObject.name == "Laser(Clone)")
+        {
+            Destroy(this.gameObject);
+            Instantiate(Splosion, transform.position, Quaternion.identity);
+        } 
+       
+        
     }
 }
