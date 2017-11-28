@@ -83,7 +83,9 @@
     <Compile Include="Assets\_scripts\LevelManager.cs" />
     <Compile Include="Assets\_scripts\MusicManager.cs" />
     <Compile Include="Assets\_scripts\PlayerContoler.cs" />
+    <Compile Include="Assets\_scripts\PowerUp.cs" />
     <Compile Include="Assets\_scripts\RockScript.cs" />
+    <Compile Include="Assets\autoDestroy.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

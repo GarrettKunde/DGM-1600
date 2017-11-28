@@ -7,6 +7,7 @@ public class RockScript : MonoBehaviour {
     public float StartingSpin;
     public Rigidbody2D rb2;
     public float move;
+    public GameObject Splosion;
 
 
     void Start () {
@@ -18,5 +19,11 @@ public class RockScript : MonoBehaviour {
 	
 	void Update () {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(this.gameObject);
+        Instantiate(Splosion, transform.position, Quaternion.identity);
     }
 }

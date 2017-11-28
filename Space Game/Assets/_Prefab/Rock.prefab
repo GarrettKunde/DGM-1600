@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50592005339310426}
   - component: {fileID: 60753089009143190}
   - component: {fileID: 114581782028805436}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,6 +114,7 @@ MonoBehaviour:
   StartingSpin: 0.3
   rb2: {fileID: 0}
   move: 50
+  Splosion: {fileID: 1348079694109490, guid: 97396e9ba7fc6674a9b2494a76f3d299, type: 2}
 --- !u!212 &212633400042781322
 SpriteRenderer:
   m_ObjectHideFlags: 1
