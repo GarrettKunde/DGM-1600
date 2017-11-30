@@ -13,11 +13,11 @@ public class RockScript : MonoBehaviour {
     void Start () {
         GetComponent<Rigidbody2D>().AddTorque(Random.Range(-StartingSpin,StartingSpin),ForceMode2D.Impulse);
         rb2 = GetComponent<Rigidbody2D>();
-        rb2.AddForce(transform.up * move);
-	}
-	
-	
-	void Update () {
+        rb2.AddForce(Random.onUnitSphere * move);
+    }
+
+
+    void Update () {
         
     }
 
