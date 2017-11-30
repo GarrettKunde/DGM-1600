@@ -14,7 +14,7 @@ public class RockSpawn : MonoBehaviour {
 	void Start () {
         
         rockCount = FindObjectsOfType<RockScript>().Length;
-        print(rockCount);
+       
     }
 	
 	// Update is called once per frame
@@ -26,7 +26,7 @@ public class RockSpawn : MonoBehaviour {
         {
          SpawnRock();
         }
-         print(rockCount);
+         
     }
 
     public void SpawnRock()

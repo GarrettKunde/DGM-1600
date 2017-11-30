@@ -7,6 +7,8 @@ public class laser : MonoBehaviour {
     public float lifetime;
     public float speed;
 
+    
+
     void Update ()
     {
         //transform.Translate(Vector3.up * speed * Time.deltaTime);
