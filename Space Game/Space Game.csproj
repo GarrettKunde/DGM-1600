@@ -80,7 +80,9 @@
   <ItemGroup>
     <Compile Include="Assets\_scripts\autoDestroy.cs" />
     <Compile Include="Assets\_scripts\camera.cs" />
+    <Compile Include="Assets\_scripts\example.cs" />
     <Compile Include="Assets\_scripts\Health.cs" />
+    <Compile Include="Assets\_scripts\HighScore.cs" />
     <Compile Include="Assets\_scripts\laser.cs" />
     <Compile Include="Assets\_scripts\LevelManager.cs" />
     <Compile Include="Assets\_scripts\MusicManager.cs" />
@@ -89,7 +91,6 @@
     <Compile Include="Assets\_scripts\RockScript.cs" />
     <Compile Include="Assets\_scripts\RockSpawn.cs" />
     <Compile Include="Assets\_scripts\soundMang.cs" />
-    <Compile Include="Assets\example.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

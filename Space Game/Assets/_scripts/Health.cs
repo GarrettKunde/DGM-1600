@@ -12,7 +12,7 @@ public class Health : MonoBehaviour {
 
     public GameObject[] hearts;
 
-    public Text scoreBoard;
+    
 
     private void Start()
     {
@@ -55,9 +55,6 @@ public class Health : MonoBehaviour {
     }
 
 
-    private void IncrementScore()
-    {
-        scoreBoard.text += 10;
-    }
+   
 
 }
