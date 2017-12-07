@@ -29,6 +29,7 @@ public class RockScript : MonoBehaviour {
         {
             Destroy(this.gameObject);
             Instantiate(Splosion, transform.position, Quaternion.identity);
+
         } 
 
       else if (collision.gameObject.name == "Player")

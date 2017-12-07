@@ -28,6 +28,8 @@ public class PlayerContoler : MonoBehaviour {
 
         rb = GetComponent<Rigidbody2D>();
 
+        print(GetComponent<Health>().Gethealth()   );
+
     }
 
     private void Update()

@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
-   
+    public static int playerCount;
+
+    private void Start()
+    {
+        playerCount = FindObjectsOfType<PlayerContoler>().Length;
+        print(playerCount);
+    }
+
     public void LevelLoad(string lvl)
     {
         SceneManager.LoadScene(lvl);
@@ -20,11 +27,9 @@ public class LevelManager : MonoBehaviour {
     public void LoadNextLevel ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        print ("tried to load");
     }
 
-    public void CheckBrickCount()
-    {
-       
-       
-    }
+    
+    
 }
