@@ -6,19 +6,24 @@ public class HighScore : MonoBehaviour {
 
     public Text highScoreDisplay;
     public Text scoreDispaly;
+    public Text endScore;
     public int number;
 
     private void Start()
     {
         number = 0;
         if (scoreDispaly != null)
-        {
             scoreDispaly.text = number.ToString();
-        }
-        if (highScoreDisplay != null)
-            highScoreDisplay.text = GetScore().ToString();
-
         
+        if (highScoreDisplay != null)
+            highScoreDisplay.text = GetHighScore().ToString();
+
+        if (endScore != null)
+            endScore.text = GetEndScore().ToString();
+
+
+
+
     }
 
 
@@ -30,13 +35,23 @@ public class HighScore : MonoBehaviour {
 
     public void SaveScore()
     {
-        PlayerPrefs.SetInt("Highscore", number);
+        PlayerPrefs.SetInt("yourScore", number);
+
+        if (number > PlayerPrefs.GetInt("highscoreS")) {
+            PlayerPrefs.SetInt("highscoreS", number);
+
+        }
 
     }
-    public int GetScore()
+    public int GetHighScore()
     {
-        return PlayerPrefs.GetInt("Highscore");
+        return PlayerPrefs.GetInt("highscoreS");
     }
+    public int GetEndScore()
+    {
+        return PlayerPrefs.GetInt("yourScore");
+    }
+        
 
     public void OnDisable()
     {

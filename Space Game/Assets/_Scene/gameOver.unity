@@ -205,8 +205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf647cb2727d49a4cb6be4d6c9bda369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highScoreDisplay: {fileID: 440742048}
+  highScoreDisplay: {fileID: 0}
   scoreDispaly: {fileID: 0}
+  endScore: {fileID: 440742048}
   number: 0
 --- !u!114 &440742047
 MonoBehaviour:
@@ -1382,6 +1383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highScoreDisplay: {fileID: 2013216864}
   scoreDispaly: {fileID: 0}
+  endScore: {fileID: 0}
   number: 0
 --- !u!1 &2048050851
 GameObject:

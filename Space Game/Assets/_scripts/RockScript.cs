@@ -38,6 +38,8 @@ public class RockScript : MonoBehaviour {
       else if (collision.gameObject.name == "Player")
         {
              collision.gameObject.GetComponent<Health>().invrementalHealth(-1);
+            Instantiate(Splosion, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
         }
            
         
