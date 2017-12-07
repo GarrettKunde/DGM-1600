@@ -13,6 +13,16 @@ public class LevelManager : MonoBehaviour {
         print(playerCount);
     }
 
+    private void Update()
+    {
+        playerCount = FindObjectsOfType<PlayerContoler>().Length;
+       
+        if ( playerCount <= 0)
+        {
+            LoadNextLevel();
+        }
+    }
+
     public void LevelLoad(string lvl)
     {
         SceneManager.LoadScene(lvl);

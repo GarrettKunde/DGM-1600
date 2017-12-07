@@ -26,10 +26,11 @@ public class Health : MonoBehaviour {
         health += damage;
         if (health <= 0)
         {
-            levelManager.LoadNextLevel();
+            
             Destroy(gameObject);
             Instantiate(splosion, transform.position, Quaternion.identity);
 
+          
                  
         }
         ShowHearts();
