@@ -8,13 +8,15 @@ public class RockScript : MonoBehaviour {
     public Rigidbody2D rb2;
     public float move;
     public GameObject Splosion;
-
+    
+    public HighScore scoreScript;
 
     void Start () {
         GetComponent<Rigidbody2D>().AddTorque(Random.Range(-StartingSpin,StartingSpin),ForceMode2D.Impulse);
         rb2 = GetComponent<Rigidbody2D>();
         rb2.AddForce(Random.onUnitSphere * move);
-        
+        scoreScript = FindObjectOfType<HighScore>();
+
     }
 
 
@@ -26,9 +28,11 @@ public class RockScript : MonoBehaviour {
 
         if (collision.gameObject.name == "Laser(Clone)")
         {
-            collision.gameObject.GetComponent<HighScore>().number += 10;
+           
+           
             Instantiate(Splosion, transform.position, Quaternion.identity);           
             Destroy(this.gameObject);
+            IncrementScore();
         } 
 
       else if (collision.gameObject.name == "Player")
@@ -37,6 +41,10 @@ public class RockScript : MonoBehaviour {
         }
            
         
+    }
+    private void IncrementScore()
+    {
+       scoreScript.ScoreBoard(10);
     }
 
    

@@ -115,6 +115,7 @@ MonoBehaviour:
   rb2: {fileID: 0}
   move: 50
   Splosion: {fileID: 1348079694109490, guid: 97396e9ba7fc6674a9b2494a76f3d299, type: 2}
+  scoreScript: {fileID: 0}
 --- !u!212 &212633400042781322
 SpriteRenderer:
   m_ObjectHideFlags: 1

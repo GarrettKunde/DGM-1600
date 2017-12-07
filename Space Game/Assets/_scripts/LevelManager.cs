@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour {
     private void Start()
     {
         playerCount = FindObjectsOfType<PlayerContoler>().Length;
-        print(playerCount);
+        
     }
 
     private void Update()
