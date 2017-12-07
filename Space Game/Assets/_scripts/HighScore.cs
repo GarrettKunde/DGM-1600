@@ -6,10 +6,17 @@ public class HighScore : MonoBehaviour {
 
     public Text highScore;
     public Text score;
+    public int number;
 
-    private void Update()
+    private void Start()
     {
-        int number = 0 ;
+        score.text = number.ToString();
+    }
+
+
+    public void scoreBoard()
+    {
+        
         score.text = number.ToString();
     }
 }
