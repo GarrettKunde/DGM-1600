@@ -22,7 +22,7 @@ public class RockSpawn : MonoBehaviour {
 
         rockCount = FindObjectsOfType<RockScript>().Length;
 
-        if (rockCount <= 60)
+        if (rockCount <= 40)
         {
          SpawnRock();
         }

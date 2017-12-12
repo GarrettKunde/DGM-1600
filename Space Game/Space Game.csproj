@@ -85,6 +85,7 @@
     <Compile Include="Assets\_scripts\HighScore.cs" />
     <Compile Include="Assets\_scripts\laser.cs" />
     <Compile Include="Assets\_scripts\LevelManager.cs" />
+    <Compile Include="Assets\_scripts\littlerock.cs" />
     <Compile Include="Assets\_scripts\MusicManager.cs" />
     <Compile Include="Assets\_scripts\PlayerContoler.cs" />
     <Compile Include="Assets\_scripts\PowerUp.cs" />

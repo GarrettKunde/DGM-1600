@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour {
 
-    public enum Type {lasor, shield, pillBomb, Speed};
+    public enum Type { health , speed};
     public Type powerUptype;
     public Sprite [] images;
 
@@ -12,16 +12,12 @@ public class PowerUp : MonoBehaviour {
 	void Start () {
 		switch (powerUptype)
         {
-            case Type.lasor:
+            
+            case Type.health:
                 gameObject.GetComponent<SpriteRenderer>().sprite = images[1];
                 break;
-            case Type.shield:
-                gameObject.GetComponent<SpriteRenderer>().sprite = images[2];
-                break;
-            case Type.pillBomb:
-                gameObject.GetComponent<SpriteRenderer>().sprite = images[3];
-                break;
-            case Type.Speed:
+            
+            case Type.speed:
                 gameObject.GetComponent<SpriteRenderer>().sprite = images [0];
                 break;
         }
@@ -38,13 +34,13 @@ public class PowerUp : MonoBehaviour {
 
         switch (powerUptype)
         {
-            case Type.lasor:
+            
+            case Type.health:
+                other.GetComponent<Health>().invrementalHealth(-1);
+                Destroy(this.gameObject);
                 break;
-            case Type.shield:
-                break;
-            case Type.pillBomb:
-                break;
-            case Type.Speed:
+                
+            case Type.speed:
                 other.GetComponent<PlayerContoler>().thrust *= 2;
                 Destroy(this.gameObject);
                 break;

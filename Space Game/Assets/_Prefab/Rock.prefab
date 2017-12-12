@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50592005339310426}
   - component: {fileID: 60753089009143190}
   - component: {fileID: 114581782028805436}
+  - component: {fileID: 114442216152755528}
   m_Layer: 11
   m_Name: Rock
   m_TagString: Untagged
@@ -37,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321503701550316}
   m_LocalRotation: {x: -0, y: -0, z: 0.9712058, w: 0.23824237}
-  m_LocalPosition: {x: -5.15, y: 0.120000005, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 14.633, y: -3.504, z: 0}
+  m_LocalScale: {x: 2.8792982, y: 2.8792982, z: 2.8792982}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,6 +101,18 @@ PolygonCollider2D:
       - {x: 0.114999995, y: -0.32}
       - {x: 0.24499999, y: -0.37}
       - {x: 0.39499998, y: -0.32999998}
+--- !u!114 &114442216152755528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321503701550316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed085767f17d9f244a1b37e5c39d5133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sRock: {fileID: 1349215591490756, guid: 750e4583c1a1c7d41b97db29aaa59002, type: 2}
 --- !u!114 &114581782028805436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingSpin: 0.3
   rb2: {fileID: 0}
-  move: 50
+  move: 60
   Splosion: {fileID: 1348079694109490, guid: 97396e9ba7fc6674a9b2494a76f3d299, type: 2}
   scoreScript: {fileID: 0}
 --- !u!212 &212633400042781322
