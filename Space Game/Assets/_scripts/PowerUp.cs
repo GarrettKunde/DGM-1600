@@ -8,9 +8,23 @@ public class PowerUp : MonoBehaviour {
     public Type powerUptype;
     public Sprite [] images;
 
+    public int set;
+
 	// Use this for initialization
 	void Start () {
-		switch (powerUptype)
+
+        set = Random.Range(1, 3);
+        switch (set)
+        {
+            case 1:
+                powerUptype = Type.health;
+                break;
+
+            case 2:
+                powerUptype = Type.speed;
+                break;
+        }
+        switch (powerUptype)
         {
             
             case Type.health:
@@ -36,12 +50,13 @@ public class PowerUp : MonoBehaviour {
         {
             
             case Type.health:
-                other.GetComponent<Health>().invrementalHealth(-1);
+                other.GetComponent<Health>().invrementalHealth(+1);
                 Destroy(this.gameObject);
                 break;
                 
             case Type.speed:
                 other.GetComponent<PlayerContoler>().thrust *= 2;
+                other.GetComponent<PlayerContoler>().tooFast = true;
                 Destroy(this.gameObject);
                 break;
             

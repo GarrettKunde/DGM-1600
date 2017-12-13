@@ -125,10 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82374697f932f6941817ea577552bca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUptype: 0
+  powerUptype: 1
   images:
   - {fileID: 21300000, guid: d6950a87111770b41b8775e8e9838c56, type: 3}
-  - {fileID: 21300000, guid: f3439c87490399749badff15cf753a9e, type: 3}
+  - {fileID: 21300000, guid: 4afcf557866e78b42960f64b782908a6, type: 3}
+  set: 0
 --- !u!212 &212751266178272380
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -110,7 +110,9 @@ MonoBehaviour:
   StartingSpin: 0.5
   rb2: {fileID: 0}
   move: 100
-  Splosion: {fileID: 1348079694109490, guid: 97396e9ba7fc6674a9b2494a76f3d299, type: 2}
+  splosion: {fileID: 1348079694109490, guid: 97396e9ba7fc6674a9b2494a76f3d299, type: 2}
+  powerUp: {fileID: 1106225377423720, guid: 0433b4d99d8b23747a6ac574c18b31b8, type: 2}
+  spawnChance: 0
   scoreScript: {fileID: 0}
 --- !u!212 &212560475041833410
 SpriteRenderer:

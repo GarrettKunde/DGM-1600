@@ -7,7 +7,9 @@ public class RockScript : MonoBehaviour {
     public float StartingSpin;
     public Rigidbody2D rb2;
     public float move;
-    public GameObject Splosion;
+    public GameObject splosion;
+    public GameObject powerUp;
+    public int spawnChance;
     
     public HighScore scoreScript;
 
@@ -30,15 +32,17 @@ public class RockScript : MonoBehaviour {
         {
            
            
-            Instantiate(Splosion, transform.position, Quaternion.identity);           
-            Destroy(this.gameObject);
+            Instantiate(splosion, transform.position, Quaternion.identity);   
             IncrementScore();
+            PowerUpSpawn();
+            Destroy(this.gameObject);
+            
         } 
-
+        
       else if (collision.gameObject.name == "Player")
         {
              collision.gameObject.GetComponent<Health>().invrementalHealth(-1);
-            Instantiate(Splosion, transform.position, Quaternion.identity);
+            Instantiate(splosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
            
@@ -47,6 +51,18 @@ public class RockScript : MonoBehaviour {
     private void IncrementScore()
     {
        scoreScript.ScoreBoard(10);
+    }
+
+   private void PowerUpSpawn()
+    {
+        spawnChance = Random.Range(1, 30);
+        print(spawnChance);
+
+        if (spawnChance == 1)
+        {
+            Instantiate(powerUp, transform.position, Quaternion.identity);
+        }
+
     }
 
    

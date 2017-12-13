@@ -21,6 +21,8 @@ public class PlayerContoler : MonoBehaviour {
 
     public int health;
 
+    public bool tooFast;
+    public float timer;
 
     void Start()
     {
@@ -28,12 +30,16 @@ public class PlayerContoler : MonoBehaviour {
 
         rb = GetComponent<Rigidbody2D>();
 
-      
+        tooFast = false;
+        timer = 30;
 
     }
 
     private void Update()
     {
+
+        
+
         if (Input.GetKey(KeyCode.UpArrow))
         {  
             rb.AddForce(transform.up * thrust);
@@ -50,19 +56,21 @@ public class PlayerContoler : MonoBehaviour {
             GameObject shot = Instantiate(projectile, shotPos.position, shotPos.rotation) as GameObject;
 
             shot.GetComponent<Rigidbody2D>().AddForce(shotPos.up * shotForce);
-
             
         }
         
+        if (tooFast == true)
+        {
+            timer -= Time.deltaTime;
+        }
+        if (timer <= 0)
+        {
+            thrust = 10;
+            tooFast = false;
+            timer = 30;
+        }
+
     
-
-
-
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-       // Destroy(this.gameObject);
-    }
 }
