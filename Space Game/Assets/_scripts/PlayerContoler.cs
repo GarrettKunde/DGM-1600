@@ -6,7 +6,7 @@ public class PlayerContoler : MonoBehaviour {
 
     //public float MoveSpeed = 1;
     private Transform transform;
-    public float slow = 2;
+   
     public float turnSpeed = 100;
 
     public GameObject projectile;
@@ -17,6 +17,12 @@ public class PlayerContoler : MonoBehaviour {
     public float thrust;
     public Rigidbody2D rb;
 
+    public ParticleSystem particles;
+
+    public int health;
+
+    public bool tooFast;
+    public float timer;
 
     void Start()
     {
@@ -24,14 +30,21 @@ public class PlayerContoler : MonoBehaviour {
 
         rb = GetComponent<Rigidbody2D>();
 
+        tooFast = false;
+        timer = 30;
+
     }
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.UpArrow))
-            // transform.Translate(Vector3.up * MoveSpeed / slow * Time.deltaTime);
-            rb.AddForce(transform.up * thrust);
 
+        
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {  
+            rb.AddForce(transform.up * thrust);
+        particles.Emit (1); 
+        }
         if (Input.GetKey(KeyCode.LeftArrow))
             transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
 
@@ -43,7 +56,21 @@ public class PlayerContoler : MonoBehaviour {
             GameObject shot = Instantiate(projectile, shotPos.position, shotPos.rotation) as GameObject;
 
             shot.GetComponent<Rigidbody2D>().AddForce(shotPos.up * shotForce);
+            
         }
+        
+        if (tooFast == true)
+        {
+            timer -= Time.deltaTime;
+        }
+        if (timer <= 0)
+        {
+            thrust = 10;
+            tooFast = false;
+            timer = 30;
+        }
+
+    
     }
 
 }
