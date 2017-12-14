@@ -56,7 +56,7 @@ public class RockScript : MonoBehaviour {
    private void PowerUpSpawn()
     {
         spawnChance = Random.Range(1, 30);
-        print(spawnChance);
+      
 
         if (spawnChance == 1)
         {
